@@ -5,7 +5,11 @@
 	   static void Main(string[] args)
 	   {
 		  IntroductionToClasses();
+		  ClassConstructors();
+	   }
 
+	   private static void ClassConstructors()
+	   {
 		  var customer = new Customer();
 		  System.Console.WriteLine(customer.Id);
 		  System.Console.WriteLine(customer.Name);
