@@ -4,9 +4,20 @@ namespace CSharp_Basics
 {
     class Person
     {
-	   private DateTime _birthDate;
+	   public DateTime BirthDate { get; set; }
+	   public int Age
+	   {
+		  get
+		  {
+			 var timeSpan = DateTime.Today - BirthDate;
+			 var years = timeSpan.Days / 365;
+
+			 return years;
+		  }	
+	   }
 
 	   public string Name;
+
 
 	   public void Introduce(string to)
 	   {
@@ -19,16 +30,6 @@ namespace CSharp_Basics
 		  person.Name = str;
 
 		  return person;
-	   }
-
-	   public void SetBirthDate(DateTime birthDate)
-	   {
-		  _birthDate = birthDate;
-	   }
-
-	   public DateTime GetBirthDate()
-	   {
-		  return _birthDate;
 	   }
     }
 }

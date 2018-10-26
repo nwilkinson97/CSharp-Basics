@@ -13,13 +13,21 @@ namespace CSharp_Basics
 		  MethodsUsingTheOutParameter();
 		  FieldsReadOnlyModifier();
 		  AccessModifierPrivate();
+		  UsingPropertiesInClasses();
+	   }
+
+	   private static void UsingPropertiesInClasses()
+	   {
+		  var person = new Person();
+		  person.BirthDate = new DateTime(1995, 1, 1);
+		  Console.WriteLine(person.Age);
 	   }
 
 	   private static void AccessModifierPrivate()
 	   {
 		  var person = new Person();
-		  person.SetBirthDate(new DateTime(1995, 1, 1));
-		  Console.WriteLine(person.GetBirthDate());
+		  person.BirthDate = new DateTime(1995, 1, 1);
+		  Console.WriteLine(person.BirthDate);
 	   }
 
 	   private static void FieldsReadOnlyModifier()
