@@ -22,5 +22,10 @@ namespace CSharp_Basics
 	   {
 		  this.Name = name;
 	   }
+
+	   public void Promote()
+	   {
+		  Orders = new List<Order>();
+	   }
     }
 }
