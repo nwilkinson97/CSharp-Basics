@@ -4,7 +4,7 @@ namespace CSharp_Basics
 {
     class Person
     {
-	   public DateTime BirthDate { get; set; }
+	   public DateTime BirthDate { get;  private set; }
 	   public int Age
 	   {
 		  get
@@ -18,6 +18,15 @@ namespace CSharp_Basics
 
 	   public string Name;
 
+	   public Person()
+	   {
+
+	   }
+
+	   public Person(DateTime birthDate)
+	   {
+		  BirthDate = birthDate;
+	   }
 
 	   public void Introduce(string to)
 	   {
