@@ -1,7 +1,11 @@
-﻿namespace CSharp_Basics
+﻿using System;
+
+namespace CSharp_Basics
 {
     class Person
     {
+	   private DateTime _birthDate;
+
 	   public string Name;
 
 	   public void Introduce(string to)
@@ -15,6 +19,16 @@
 		  person.Name = str;
 
 		  return person;
+	   }
+
+	   public void SetBirthDate(DateTime birthDate)
+	   {
+		  _birthDate = birthDate;
+	   }
+
+	   public DateTime GetBirthDate()
+	   {
+		  return _birthDate;
 	   }
     }
 }
