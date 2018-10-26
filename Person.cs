@@ -4,7 +4,9 @@ namespace CSharp_Basics
 {
     class Person
     {
-	   public DateTime BirthDate { get;  private set; }
+	   public string Name { get; set; }
+	   public string UserName { get; set; }
+	   public DateTime BirthDate { get; private set; }
 	   public int Age
 	   {
 		  get
@@ -13,11 +15,8 @@ namespace CSharp_Basics
 			 var years = timeSpan.Days / 365;
 
 			 return years;
-		  }	
+		  }
 	   }
-
-	   public string Name { get; set; }
-	   public string UserName { get; set; }
 
 	   public Person()
 	   {
