@@ -6,7 +6,7 @@ namespace CSharp_Basics
     {
 	   public int Id;
 	   public string Name;
-	   public List<Order> Orders = new List<Order>();
+	   public readonly List<Order> Orders = new List<Order>();
 
 	   public Customer()
 	   {
@@ -25,7 +25,7 @@ namespace CSharp_Basics
 
 	   public void Promote()
 	   {
-		  Orders = new List<Order>();
+		  // ....
 	   }
     }
 }

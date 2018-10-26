@@ -11,9 +11,7 @@ namespace CSharp_Basics
 		  Methods();
 		  MethodsUsingParmas();
 		  MethodsUsingTheOutParameter();
-
 		  FieldsReadOnlyModifier();
-
 	   }
 
 	   private static void FieldsReadOnlyModifier()
