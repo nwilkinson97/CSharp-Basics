@@ -14,6 +14,16 @@ namespace CSharp_Basics
 		  FieldsReadOnlyModifier();
 		  AccessModifierPrivate();
 		  UsingPropertiesInClasses();
+		  UsingIndexorTypeDictionary();
+	   }
+
+	   private static void UsingIndexorTypeDictionary()
+	   {
+		  var cookie = new HttpCookie();
+		  cookie["From"] = "Thing 1";
+		  cookie["To"] = "Thing 2";
+		  Console.WriteLine(cookie["From"]);
+		  Console.WriteLine(cookie["To"]);
 	   }
 
 	   private static void UsingPropertiesInClasses()
