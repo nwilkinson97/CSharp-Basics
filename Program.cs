@@ -16,12 +16,17 @@ namespace CSharp_Basics
 
 	   private static void FieldsReadOnlyModifier()
 	   {
+		  //  New customer object
 		  var customer = new Customer(1);
+
+		  //  Add Two Orders
 		  customer.Orders.Add(new Order());
 		  customer.Orders.Add(new Order());
 
+		  //  Promote Customer
 		  customer.Promote();
 
+		  //  Display Count of Orders
 		  Console.WriteLine(customer.Orders.Count);
 	   }
 
