@@ -1,4 +1,6 @@
-﻿namespace CSharp_Basics
+﻿using System;
+
+namespace CSharp_Basics
 {
     class Program
     {
@@ -8,6 +10,44 @@
 		  ClassConstructors();
 		  Methods();
 		  MethodsUsingParmas();
+		  MethodsUsingTheOutParameter();
+	   }
+
+	   private static void MethodsUsingTheOutParameter()
+	   {
+		  //  Using the integer parse method requires us
+		  //  to catch the exception and process the eror.
+		  try
+		  {
+			 var num = int.Parse("abc");
+		  }
+		  catch (Exception ex)
+		  {
+			 Console.WriteLine(ex.Message);
+		  }
+
+		  // ---------------------------------------------------
+		  // ---------------------------------------------------
+
+		  //  Using the Try Parse Command
+		  int n1;
+		  var rslt1 = int.TryParse("abc", out n1);
+		  //  Displaying Results
+		  if (rslt1)
+			 Console.WriteLine(n1);
+		  else
+			 Console.WriteLine("Conversion Failed");
+
+		  // ---------------------------------------------------
+		  // ---------------------------------------------------
+
+		  //  Using Tryparse and decalring the integer variable inline
+		  var rslt2 = int.TryParse("20", out int n2);
+		  //  Displaying Results
+		  if (rslt2)
+			 Console.WriteLine(n2);
+		  else
+			 Console.WriteLine("Conversion Failed");
 
 	   }
 
@@ -37,7 +77,7 @@
 
 			 point.Move(null);
 		  }
-		  catch (System.Exception ex)
+		  catch (Exception ex)
 		  {
 			 System.Console.WriteLine(ex.Message);
 		  }
