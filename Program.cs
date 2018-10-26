@@ -6,6 +6,23 @@
 	   {
 		  IntroductionToClasses();
 		  ClassConstructors();
+		  Methods();
+	   }
+
+	   private static void Methods()
+	   {
+		  // Create a new Point then consume the object to set the intial point
+		  var point = new Point(10, 20);
+		  System.Console.WriteLine("Point is at ({0},{1})", point.X, point.Y);
+
+		  // Move the current point to a new location
+		  // use the new keyword to perform this action on the same line
+		  point.Move(new Point(40, 60));
+		  System.Console.WriteLine("Point is at ({0},{1})", point.X, point.Y);
+
+		  // Use the overload to provide 2 integer values and assign coordinates
+		  point.Move(100, 200);
+		  System.Console.WriteLine("Point is at ({0},{1})", point.X, point.Y);
 	   }
 
 	   private static void ClassConstructors()
