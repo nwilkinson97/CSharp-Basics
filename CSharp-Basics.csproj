@@ -43,15 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\BasicImplementation\BasicImplementationOfClasses.cs" />
-    <Compile Include="Classes\Calculator.cs" />
-    <Compile Include="Classes\Customer.cs" />
-    <Compile Include="Classes\HttpCookie.cs" />
-    <Compile Include="Classes\Order.cs" />
-    <Compile Include="Classes\Person.cs" />
-    <Compile Include="Classes\Point.cs" />
+    <Compile Include="BasicImplementation.cs" />
+    <Compile Include="Calculator.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="HttpCookie.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="PresentationObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Text.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
