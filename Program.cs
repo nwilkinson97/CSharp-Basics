@@ -7,6 +7,15 @@
 		  IntroductionToClasses();
 		  ClassConstructors();
 		  Methods();
+		  MethodsUsingParmas();
+
+	   }
+
+	   private static void MethodsUsingParmas()
+	   {
+		  var calculator = new Calculator();
+		  System.Console.WriteLine(calculator.Add(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }));
+		  System.Console.WriteLine(calculator.Add(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 	   }
 
 	   private static void Methods()
