@@ -87,8 +87,8 @@ namespace CSharp_Basics
 	   private static void ClassConstructors()
 	   {
 		  var customer = new Customer();
-		  System.Console.WriteLine(customer.Id);
-		  System.Console.WriteLine(customer.Name);
+		  Console.WriteLine(customer.Id);
+		  Console.WriteLine(customer.Name);
 	   }
 
 	   private static void IntroductionToClasses()
