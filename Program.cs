@@ -9,6 +9,16 @@
 		  // ClassBasicsImplementation();
 
 		  Inhertance();
+		  Composition();
+	   }
+
+	   private static void Composition()
+	   {
+		  var DbMigrator = new DbMigrator(new Logger());
+		  var Installer = new Installer(new Logger());
+
+		  DbMigrator.Migrate();
+		  Installer.Install();
 	   }
 
 	   private static void Inhertance()
