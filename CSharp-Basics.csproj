@@ -46,10 +46,8 @@
     <Compile Include="BasicImplementation.cs" />
     <Compile Include="Calculator.cs" />
     <Compile Include="Composition.cs" />
-    <Compile Include="Customer.cs" />
     <Compile Include="Customer_old.cs" />
     <Compile Include="DbMigrator.cs" />
-    <Compile Include="GoldCustomer.cs" />
     <Compile Include="HttpCookie.cs" />
     <Compile Include="Installer.cs" />
     <Compile Include="Order.cs" />

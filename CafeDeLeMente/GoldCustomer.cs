@@ -1,7 +1,5 @@
-﻿namespace CSharp_Basics
+﻿namespace CafeDeLeMente
 {
-    partial class Program
-    {
 	   class GoldCustomer : Customer
 	   {
 		  public void OfferVoucher()
@@ -17,6 +15,5 @@
 			 //  we would have to modify the code blocks in 2 seaprate classes.  Unless required
 			 //  we should prevent using protected.
 		  }
-	   }
-    }
+	   }    
 }

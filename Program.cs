@@ -14,7 +14,7 @@
 
 	   private static void AccessModifier_Private()
 	   {
-		  var customer = new Customer();
+		  //var customer = new Customer();
 		  //// Access Modifier of private prevents us from accessing the business
 		  //// logic of the class.  This prevents us from updating code in multiple
 		  //// areas.
