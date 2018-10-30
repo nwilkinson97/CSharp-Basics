@@ -1,6 +1,6 @@
 ﻿namespace CafeDeLeMente
 {
-    public class RateCalculator
+    internal class RateCalculator
     {
 	   public int Calculate(Customer customer)
 	   {

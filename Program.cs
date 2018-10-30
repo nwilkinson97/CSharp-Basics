@@ -1,5 +1,4 @@
-﻿
-using CafeDeLeMente;
+﻿using CafeDeLeMente;
 
 namespace CSharp_Basics
 {
@@ -13,10 +12,17 @@ namespace CSharp_Basics
 		  Inhertance();
 		  Composition();
 		  AccessModifier_Private();
+		  AccessModifier_Internal();
 
+	   }
 
+	   private static void AccessModifier_Internal()
+	   {
 		  var customer = new Customer();
-
+		  ////  By changing the access modifier to the rate calculator to
+		  ////  internal the Rate Calculator no longer is accessible.
+		  ////  however we can still access the customer class.
+		  //var RateCalculator = new RateCalculator();  
 	   }
 
 	   private static void AccessModifier_Private()
@@ -43,11 +49,15 @@ namespace CSharp_Basics
 		  //  This object inherits from the PresentationOjbect and the Text Class
 		  //  Because of this we can access properties and methods in both classes.
 		  //  This is because of Inheritance.
-		  var text = new Text();
 
 		  //  PresentationObject
-		  text.Width = 100;
-		  text.Height = 20;
+		  var text = new Text
+		  {
+			 
+			 Width = 100,
+			 Height = 20
+		  };
+
 		  text.Copy();
 		  text.Duplicate();
 
