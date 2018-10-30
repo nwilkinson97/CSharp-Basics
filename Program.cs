@@ -9,7 +9,6 @@
 
 		  Inhertance();
 		  Composition();
-
 		  AccessModifier_Private();
 	   }
 
