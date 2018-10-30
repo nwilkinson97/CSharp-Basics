@@ -2,17 +2,25 @@
 
 namespace CSharp_Basics
 {
+
     partial class Program
     {
+
+
 	   static void Main(string[] args)
 	   {
 		  //// This Method Calls Methods from Phase 1:  Basics of Classes
 		  // ClassBasicsImplementation();
 
-		  Inhertance();
-		  Composition();
-		  AccessModifier_Private();
-		  AccessModifier_Internal();
+		  //Inhertance();
+		  //Composition();
+		  //AccessModifier_Private();
+		  //AccessModifier_Internal();
+
+
+		  // Vehicle is being initialized
+		  //  Car is being Initialized
+		  var car = new Car("abc123");
 
 	   }
 
@@ -53,7 +61,7 @@ namespace CSharp_Basics
 		  //  PresentationObject
 		  var text = new Text
 		  {
-			 
+
 			 Width = 100,
 			 Height = 20
 		  };
