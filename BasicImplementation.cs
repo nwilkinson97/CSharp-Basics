@@ -42,7 +42,7 @@ namespace CSharp_Basics
 	   private static void FieldsReadOnlyModifier()
 	   {
 		  //  New customer object
-		  var customer = new Customer(1);
+		  var customer = new Customer_old(1);
 
 		  //  Add Two Orders
 		  customer.Orders.Add(new Order());
@@ -128,7 +128,7 @@ namespace CSharp_Basics
 
 	   private static void ClassConstructors()
 	   {
-		  var customer = new Customer();
+		  var customer = new Customer_old();
 		  Console.WriteLine(customer.Id);
 		  Console.WriteLine(customer.Name);
 	   }

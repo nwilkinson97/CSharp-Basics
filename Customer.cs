@@ -2,23 +2,23 @@
 
 namespace CSharp_Basics
 {
-    class Customer
+    class Customer_old
     {
 	   public int Id;
 	   public string Name;
 	   public readonly List<Order> Orders = new List<Order>();
 
-	   public Customer()
+	   public Customer_old()
 	   {
 
 	   }
 
-	   public Customer(int id) : this()
+	   public Customer_old(int id) : this()
 	   {
 		  this.Id = id;
 	   }
 
-	   public Customer(int id, string name) : this(id)
+	   public Customer_old(int id, string name) : this(id)
 	   {
 		  this.Name = name;
 	   }
