@@ -46,7 +46,11 @@
     <Compile Include="BasicImplementation.cs" />
     <Compile Include="Calculator.cs" />
     <Compile Include="Composition.cs" />
+<<<<<<< HEAD
     <Compile Include="Customer_old.cs" />
+=======
+    <Compile Include="Customer.cs" />
+>>>>>>> parent of 1734497... Cleaned up Code
     <Compile Include="DbMigrator.cs" />
     <Compile Include="HttpCookie.cs" />
     <Compile Include="Installer.cs" />
