@@ -3,6 +3,9 @@
     partial class Program
     {
 
+
+
+
 	   static void Main(string[] args)
 	   {
 		  //// This Method Calls Methods from Phase 1:  Basics of Classes
@@ -10,6 +13,17 @@
 
 		  Inhertance();
 		  Composition();
+
+		  AccessModifier_Private();
+	   }
+
+	   private static void AccessModifier_Private()
+	   {
+		  var customer = new Customer();
+		  //// Access Modifier of private prevents us from accessing the business
+		  //// logic of the class.  This prevents us from updating code in multiple
+		  //// areas.
+		  //var i = customer.CalculateRating();
 	   }
 
 	   private static void Composition()
