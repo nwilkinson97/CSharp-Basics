@@ -1,4 +1,7 @@
-﻿namespace CSharp_Basics
+﻿
+using CafeDeLeMente;
+
+namespace CSharp_Basics
 {
     partial class Program
     {
@@ -9,8 +12,11 @@
 
 		  Inhertance();
 		  Composition();
-
 		  AccessModifier_Private();
+
+
+		  var customer = new Customer();
+
 	   }
 
 	   private static void AccessModifier_Private()

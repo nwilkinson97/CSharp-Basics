@@ -1,6 +1,6 @@
 ﻿namespace CafeDeLeMente
 {
-	   class GoldCustomer : Customer
+	   public class GoldCustomer : Customer
 	   {
 		  public void OfferVoucher()
 		  {
