@@ -2,10 +2,6 @@
 {
     partial class Program
     {
-
-
-
-
 	   static void Main(string[] args)
 	   {
 		  //// This Method Calls Methods from Phase 1:  Basics of Classes
